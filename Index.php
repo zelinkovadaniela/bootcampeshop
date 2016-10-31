@@ -1,15 +1,14 @@
 BOOTCAMP ESHOP!
 <?php
 
+  define('DOCROOT', __DIR__);
+  require (DOCROOT.'/system/config/bootstrap.php');
 
-define('DOCROOT', __DIR__);
-require (DOCROOT.'/system/config/bootstrap.php');
-
-request::loadRequest();
-$controller = router::getController();
-
+  request::loadRequest();
+  $controller = router::getController();
        
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,12 +18,7 @@ $controller = router::getController();
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-     <nav>
-        <a href="index.php">home</a>
-        <a href="index.php?page=contact">contact form</a>
-        <a href="index.php?page=home">products</a>
-        <a href="index.php?page=productlist">productlist</a>
-     </nav>
+     
 
      <?php
       include ($controller);

@@ -27,6 +27,8 @@ require_once(LIBRARIES_DIR.'/config.class.php');
 require_once(LIBRARIES_DIR.'/db.class.php');
 //get and post methods
 require_once(LIBRARIES_DIR.'/request.class.php');
+//creates smarty evrytime we need it
+require_once(LIBRARIES_DIR.'/view.class.php');
 
 //vendor autoload
 require_once (VENDOR_DIR.'/autoload.php');
