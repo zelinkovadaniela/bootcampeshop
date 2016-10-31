@@ -1,0 +1,1 @@
+&copy Daniela Zelinkova, 2016

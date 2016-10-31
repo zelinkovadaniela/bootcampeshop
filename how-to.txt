@@ -1,0 +1,63 @@
+Eshop
+*determin what page to show
+  print page wrapper
+    *print header
+    *print navbar
+      print search field
+    *print footer
+      *wrapping it in HTML
+      *wrapping it in layout
+  homepage
+    print top products
+    print categories
+    print "about" text
+  product list
+    print a list of products
+  product detail
+    print the main image
+    print description
+    print parameters
+    print gallery
+    print add-to-basket
+    print add-to-wish-list
+    print people-also-bought
+  basket detail
+    print list of products in the basket
+    print similar products
+  order process
+    
+  search results page
+    
+  contact page
+    
+    HOMEPAGE 
+    --------
+    1) user comes with an URL
+    2) we determine whic page to show with the router class (ie.hompage controller)
+    3) we run the run() method on the hompage_controller class
+    4) create a new view for the homepage's layout
+    5) prepare the section with the top products 
+        1) select top products from the database
+        2) create a new view
+        3) put the selected products in the view
+        4) render the top products view
+        5) put the rendered top products into the homepage layout
+   6) prepare the section with categories
+        1) connect the database
+        2) select categories from database
+        3) create a new view 'homepage/categories'
+        4) put the selected categories in the view
+        5) render the view
+        6) insert the view into the homepage layout
+   7) prepare the section with the shop info
+        1) create the new view with the shop info in it
+        2) render the view
+        3) put it in the hompepage layout
+  
+  PRODUCT list
+  ------------
+TO DO FOR HOMEWORK
+
+  PRODUCT detail
+  --------------
+TO DO FOR HOMEWORK

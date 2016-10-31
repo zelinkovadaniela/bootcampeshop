@@ -30,6 +30,8 @@ require_once(LIBRARIES_DIR.'/request.class.php');
 //creates smarty evrytime we need it
 require_once(LIBRARIES_DIR.'/view.class.php');
 
+require_once(LIBRARIES_DIR.'/presenter.class.php');
+
 //vendor autoload
 require_once (VENDOR_DIR.'/autoload.php');
 

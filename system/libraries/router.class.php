@@ -3,7 +3,7 @@
 class router
 {
 
-  public static function getController()
+  public static function getControllerName()
   {
     // we get the page name from $_GET
     if(isset($_GET['page'])) // if there is a value with the name 'page' in the URL
@@ -22,14 +22,16 @@ class router
     if(file_exists($file_path))
     {
       // return the path to that file
-      return $file_path;
+      return $page;
     }
     else
     {
       // return the path to the error 404 file
-      return CONTROLLERS_DIR.'/error404.controller.php';
+      return 'error404';
     }
   }
 
-
+  public static function getControllerFile($controller_name){
+      return CONTROLLERS_DIR . '/' . $controller_name . '.controller.php';
+  }
 }

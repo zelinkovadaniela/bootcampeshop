@@ -1,7 +1,7 @@
 <h1>{$heading}</h1>
 
-<ul>
 
+<ul>
 {foreach $results as $result}
   <li>
     {$result['name']}
