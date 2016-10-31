@@ -56,8 +56,35 @@ Eshop
   
   PRODUCT list
   ------------
-TO DO FOR HOMEWORK
+  1) user comes with an URL
+  2) we determine which page to show with the router class (ie.products controller)
+  3) we run the run() method on the products_controller class
+  4) create a new view for the products's layout
+  5) put the selected products in the view
+  6) render the products view
+  7) put the rendered products into the product list layout 
 
   PRODUCT detail
   --------------
-TO DO FOR HOMEWORK
+  1) user comes with an URL
+  2) we determine which page to show with the router class (ie.product detail)
+  3) we run the run() method on the products_detail class
+  4) create a new view for the product detail's layout
+      1) prepare the section with the product
+      2) create a new view
+      3) put the selected product in the view
+      4) render the product view
+      5) put the rendered product into the layout
+  5) create a new view for the product description's layout
+      1) prepare the section with the product description
+      2) create a new view
+      3) put the selected product details in the view
+      4) render the product details view
+      5) put the rendered product details into the layout
+  6) create a new view for the product parameters's layout
+      1) prepare the section with the product parameters
+      2) create a new view
+      3) put the selected product parameters in the view
+      4) render the product parameters view
+      5) put the rendered product parameters into the layout
+  

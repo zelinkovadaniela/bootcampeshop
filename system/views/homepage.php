@@ -1,1 +1,1 @@
-<div class="top-products"
+<div class="top-products">
