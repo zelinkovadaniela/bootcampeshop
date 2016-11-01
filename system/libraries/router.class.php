@@ -23,15 +23,28 @@ class router
     {
       // return the path to that file
       return $page;
-    }
+      }
     else
     {
       // return the path to the error 404 file
       return 'error404';
+      }
     }
-  }
 
-  public static function getControllerFile($controller_name){
-      return CONTROLLERS_DIR . '/' . $controller_name . '.controller.php';
-  }
+    public static function runController($controller_name){
+
+    $controller_file = router::getControllerFile($controller_name);
+  
+    $controller_class = $controller_name.'_controller';
+
+    include ($controller_file);
+
+    $controller = new $controller_class();
+    $controller->run();
+    }
+
+    public static function getControllerFile($controller_name){
+        return CONTROLLERS_DIR . '/' . $controller_name . '.controller.php';
+    }
+
 }

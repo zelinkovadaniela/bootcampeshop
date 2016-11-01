@@ -54,15 +54,28 @@ Eshop
         2) render the view
         3) put it in the hompepage layout
   
-  PRODUCT list
+  CATEGORY(PRODUCT LIST)
   ------------
   1) user comes with an URL
-  2) we determine which page to show with the router class (ie.products controller)
-  3) we run the run() method on the products_controller class
-  4) create a new view for the products's layout
-  5) put the selected products in the view
-  6) render the products view
-  7) put the rendered products into the product list layout 
+  2) we determine which page to show with the router class (ie.category controller)
+  3) we run the run() method on the category_controller class
+  4) create a new view for the category's layout
+  5) determine which category the user want to see (IF ANY)
+  6) category info 
+      1) select the category from the database
+      2) category name
+      3) category description
+  7) sub-categories 
+      1) select sub-categories from the database
+      2) make a new view
+      3) put hte categories in the view
+      4) put the view into the category layout and render it
+  8) put the selected products in the view
+      1) select products from the database
+      2) make a new view
+      3) put the products into the view
+      4) put the  view into the category layout and render it
+  
 
   PRODUCT detail
   --------------

@@ -29,7 +29,7 @@
       $categories->categories = $results;
       $homepage->categories = $categories;
 
-      $homepage->shop_info = 'Shop_Info';
+      $homepage->shop_info = new view ('homepage/shop_Info');
 
       presenter::present($homepage);
     } 
