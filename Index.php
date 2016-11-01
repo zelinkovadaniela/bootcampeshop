@@ -10,13 +10,15 @@
  
   $controller_class = $controller_name.'_controller';
 
-  
+  // start output buffering
+  ob_start();
   
   include ($controller_file);
 
   $controller = new $controller_class();
   $controller->run();
 
+  echo ob_get_clean();
 ?>
 
 

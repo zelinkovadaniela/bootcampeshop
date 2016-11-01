@@ -5,8 +5,9 @@
 
     public function run(){
 
-      $homepage = new view('homepage/hompage');
-      $homepage->top_products = new view('homepage/top_products');
+      $homepage = new view('homepage/homepage');
+
+      $top_products = new view('homepage/top_products');
       $query = "
       SELECT `product` .*
       FROM `product`
@@ -14,9 +15,20 @@
       ORDER BY `product`.`name` ASC
       ";
       $results = db::execute($query);
-      $homepage->top_products->products = $results;
+      $top_products->products = $results;
+      $homepage->top_products = $top_products;
 
-      $homepage->categories = 'Categories';
+      $categories = new view('homepage/categories');
+      $query = "
+      SELECT `category`.*
+      FROM `category`
+      WHERE `category`.`parent_id` IS NULL
+      ORDER BY `category`.`name` ASC
+      ";
+      $results = db::execute($query);
+      $categories->categories = $results;
+      $homepage->categories = $categories;
+
       $homepage->shop_info = 'Shop_Info';
 
       presenter::present($homepage);

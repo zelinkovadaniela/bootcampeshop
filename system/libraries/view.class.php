@@ -52,7 +52,7 @@
    }
 
    public function __get($name){
-     if (array_key_exists($name, $this->template_variables[$name])){
+     if (array_key_exists($name, $this->template_variables)){
        return $this->template_variables[$name];
      }
      $trace = debug_backtrace();

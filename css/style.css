@@ -1,0 +1,25 @@
+#page {
+  border: 1px solid gold;
+  padding: 20px;
+}
+#topmenu {
+  border: 1px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+#header {
+  border: 1px solid green;
+  margin: 20px;
+  padding: 20px;
+}
+#footer{
+  border: 1px solid blue;
+  margin: 20px;
+  padding: 20px;
+}
+#content {
+  border: 1px solid red;
+  background-color:#eeeeee;
+  margin: 20px;
+  padding: 20px;
+}
